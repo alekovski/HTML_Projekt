@@ -1,0 +1,45 @@
+div,
+nav,
+p {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(/js/Projekt/img/meaning+of+the+color+white+in+art.jpg);
+    color: rgb(26, 2, 2);
+    background-attachment: fixed;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.wrapper {
+    width: 70rem;
+    margin: auto;
+}
+
+.footer-nav {
+    display: flex;
+    padding-bottom: 3rem;
+    margin-top: 7rem;
+    justify-content: space-around;
+}
+
+.footer-nav a {
+    text-decoration: overline;
+    color: rgb(0, 0, 0);
+}
+
+.footer-nav a:hover {
+    color: rgba(120, 121, 120, 0.726);
+}
+
+.title {
+    text-align: center;
+    max-width: fit-content;
+}
+
+.framed-content {
+    padding: 15px;
+    margin: 20px 0;
+    background-color: rgba(182, 187, 187, 0.699);
+}

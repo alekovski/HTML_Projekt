@@ -1,0 +1,77 @@
+#check {
+  display: none;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.top-nav a {
+  display: contents;
+  height: 10rem;
+  line-height: 3rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 4px 8px;
+}
+
+@media screen and (min-width: 60rem) {
+  .nav-wrapper {
+    display: none;
+    justify-content: center;
+    position: static;
+  }
+
+  .switch-label {
+    display: none;
+    justify-content: center;
+    position: static;
+  }
+
+  .colum {
+    display: none;
+    justify-content: center;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 60rem) {
+  .top-nav {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .nav-wrapper {
+    display: none;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.switch-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 30rem;
+  width: 100%;
+
+  background-image: url(/js/Projekt/burger/hamburger.svg);
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  background-position: center;
+}
+
+#check:checked+.nav-wrapper {
+  display: inline-block;
+  left: 10rem;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

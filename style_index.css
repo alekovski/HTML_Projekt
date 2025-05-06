@@ -1,0 +1,13 @@
+body {
+    margin: 0rem;
+    background-image: url(/js/Projekt/img/1732134118262.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: auto;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

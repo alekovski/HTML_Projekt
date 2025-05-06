@@ -1,0 +1,117 @@
+    #check {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border: 2px solid;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(12, 1, 1, 0.877);
+    }
+
+    @media screen and (min-width: 60rem) {
+        .colum {
+            display: flex;
+            text-align: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 60rem) {
+        .wrapper {
+            width: 100%;
+        }
+    }
+
+    .inhalt {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        margin-bottom: 20px;
+    }
+
+    .inhalt a {
+        color: rgba(71, 100, 4, 0.726);
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    article h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3.7rem;
+        color: hsl(0, 0%, 100%);
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        text-align: center;
+        border-radius: 2px;
+        background-color: hsl(294, 82%, 18%);
+        width: auto;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    article h2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: hsl(294, 82%, 18%);
+        text-shadow: 0 4px 8px;
+    }
+
+    article p1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 0 1px 1px;
+    }
+
+    a {
+        color: rgb(255, 30, 0);
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+    a:hover {
+        color: rgb(119, 69, 128);
+    }
+
+    .resizable-image {
+        width: 75%;
+        height: auto;
+        display: flow-root;
+        margin: 0 auto;
+        border-radius: 1px;
+        border: 2px solid #e4dcdc;
+    }
+
+    .resizable-image1 {
+        width: 50%;
+        height: auto;
+        display: flow-root;
+        margin: 0 auto;
+        border-radius: 1px;
+        border: 2px solid #e4dcdc;
+    }
+
+    .collage {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px;
+    }
+
+    .collage img:hover {
+        transform: scale(1.7);
+        box-shadow: 0 5px 15px #2b2929ee;
+    }
+
+    .kontakt-wrapper {
+        font-size: 1.5rem;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 5rem;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+    }
