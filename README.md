@@ -1,6 +1,6 @@
 # HTML_Project
 
-This projekt contains a simple website that demonstrates the use of HTML, CSS, and JavaScript for front-end development.
+This project contains a simple website that demonstrates the use of HTML, CSS, and JavaScript for front-end development.
 
 ## Project Description
 
