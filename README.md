@@ -10,7 +10,7 @@ This project is a web page dedicated to the topic of art galleries in Düsseldor
 - CSS: For styling the page elements, ensuring an attractive look and responsive design.
 - JavaScript: (If used) For adding interactive elements or dynamic content.
 
-## The project showcases skills such as:
+## Project Skills:
 
 - Creating and structuring HTML documents.
 - Linking and using external CSS files.
