@@ -4,21 +4,21 @@ It presents selected art galleries in Düsseldorf and demonstrates clean front�
 
 ## Features
  - Start Page Navigation.
-    Entry page with links to the main gallery page and internal sections.
+   Entry page with links to the main gallery page and internal sections.
  - Gallery Overview Page.
-    Detailed presentation of five Düsseldorf art galleries including images, descriptions, and additional information.
+   Detailed presentation of five Düsseldorf art galleries including images, descriptions, and additional information.
  - Image Collages & Animations.
-    Multiple responsive image sections, including GIF animations and styled gallery layouts.
+   Multiple responsive image sections, including GIF animations and styled gallery layouts.
  - Internal Navigation.
-    Table of contents with anchor links to each gallery section.
+   Table of contents with anchor links to each gallery section.
  - Contact Section.
-    Address information and a mailto‑based contact form.
+   Address information and a mailto‑based contact form.
  - Legal Subpages.
-    Separate pages for Impressum, Datenschutz, and Stiftung, each with clean structure and consistent styling.
+   Separate pages for Impressum, Datenschutz, and Stiftung, each with clean structure and consistent styling.
  - Responsive Design.
-    Layout adapts to different screen sizes using CSS media queries.
+   Layout adapts to different screen sizes using CSS media queries.
  - Clean File Structure.
-    Clear separation of HTML pages, CSS files, and image assets.
+   Clear separation of HTML pages, CSS files, and image assets.
 
 ## Technologies Used
  - HTML5 for page structure
