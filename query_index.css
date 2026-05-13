@@ -1,13 +1,22 @@
+/* Verhindert Scrollen auf der Startseite (Vollbild-Navigation) */
+body {
+  overflow: hidden;
+}
+
+/* Checkbox für Burger-Menü (unsichtbar) */
 #check {
   display: none;
 }
 
+/* Zentrierte Vollbild-Navigation */
 .top-nav {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
+/* Navigationselemente */
 .top-nav a {
   display: contents;
   height: 10rem;
@@ -16,19 +25,10 @@
   text-shadow: 0 4px 8px;
 }
 
+/* Desktop: Burger-Menü + mobile Elemente ausblenden */
 @media screen and (min-width: 60rem) {
-  .nav-wrapper {
-    display: none;
-    justify-content: center;
-    position: static;
-  }
-
-  .switch-label {
-    display: none;
-    justify-content: center;
-    position: static;
-  }
-
+  .nav-wrapper,
+  .switch-label,
   .colum {
     display: none;
     justify-content: center;
@@ -36,6 +36,7 @@
   }
 }
 
+/* Mobile Navigation */
 @media screen and (max-width: 60rem) {
   .top-nav {
     text-align: center;
@@ -43,7 +44,6 @@
   }
 
   .nav-wrapper {
-    display: none;
     text-align: center;
     justify-content: center;
   }
@@ -53,24 +53,56 @@
   }
 }
 
+/* Burger-Icon */
 .switch-label {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  height: 30rem;
-  width: 100%;
+  align-items: center;
 
-  background-image: url(/js/Projekt/burger/hamburger.svg);
+  width: 100%;
+  height: 10rem;
+
+  background-image: url("burger/hamburger.svg");
   background-repeat: no-repeat;
-  background-size: 10rem;
   background-position: center;
+  background-size: 8rem;
+
+  cursor: pointer;
+
+  /* Glow + Animation */
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.4));
+  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
 }
 
-#check:checked+.nav-wrapper {
+/* Hover-Effekt Burger */
+.switch-label:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 12px rgba(255,255,255,0.8));
+}
+
+/* Klick-Effekt */
+.switch-label:active {
+  transform: scale(0.95);
+}
+
+/* Versteckte Navigation (geschlossen) */
+.nav-wrapper {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+/* Geöffnete Navigation (Checkbox aktiviert) */
+#check:checked + .nav-wrapper {
   display: inline-block;
-  left: 10rem;
+
+  opacity: 1;
+  max-height: 500px;
+
   width: 100%;
   padding: 1rem;
+
   justify-content: center;
   flex-direction: column;
   align-items: center;

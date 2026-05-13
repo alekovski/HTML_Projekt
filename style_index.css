@@ -1,10 +1,18 @@
+/* ===========================
+   GLOBAL BACKGROUND
+   (Seitenhintergrund + Reset)
+   =========================== */
 body {
     margin: 0rem;
-    background-image: url(/js/Projekt/img/1732134118262.webp);
+    background-image: url(/img/1732134118262.webp);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* Vollflächiger Hintergrund */
 }
 
+/* ===========================
+   WRAPPER
+   (zentrierter Inhaltsbereich)
+   =========================== */
 .wrapper {
     width: auto;
     margin: auto;

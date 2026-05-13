@@ -1,117 +1,212 @@
-    #check {
-        display: none;
-    }
+/* ===========================
+   GLOBAL
+   (Grundlegende Elemente)
+   =========================== */
+#check {
+    display: none; /* Steuerung für mobile Navigation */
+}
 
-    img {
-        width: 100%;
-        height: auto;
-        border: 2px solid;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(12, 1, 1, 0.877);
-    }
-
-    @media screen and (min-width: 60rem) {
-        .colum {
-            display: flex;
-            text-align: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-    }
-
-    @media screen and (max-width: 60rem) {
-        .wrapper {
-            width: 100%;
-        }
-    }
-
-    .inhalt {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 20px;
-        margin-bottom: 20px;
-    }
-
-    .inhalt a {
-        color: rgba(71, 100, 4, 0.726);
-        text-decoration: none;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    article h1 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 3.7rem;
-        color: hsl(0, 0%, 100%);
-        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-        margin-bottom: 5rem;
-        margin-top: 5rem;
+/* ===========================
+   RESPONSIVE SPALTEN
+   (Layout-Anpassung für große Bildschirme)
+   =========================== */
+@media screen and (min-width: 60rem) {
+    .colum {
+        display: flex;
         text-align: center;
-        border-radius: 2px;
-        background-color: hsl(294, 82%, 18%);
-        width: auto;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        gap: 2rem;
+        margin-bottom: 2rem;
     }
+}
 
-    article h2 {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: hsl(294, 82%, 18%);
-        text-shadow: 0 4px 8px;
+/* Mobile Wrapper-Anpassung */
+@media screen and (max-width: 60rem) {
+    .wrapper {
+        width: 100%;
     }
+}
 
-    article p1 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-shadow: 0 1px 1px;
-    }
+/* ===========================
+   INHALTSNAVIGATION
+   =========================== */
+.inhalt {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
 
-    a {
-        color: rgb(255, 30, 0);
-        text-decoration: underline;
-        font-size: 20px;
-    }
+.inhalt a {
+    color: #6d2a9a;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-    a:hover {
-        color: rgb(119, 69, 128);
+/* ===========================
+   TITEL & TEXT
+   =========================== */
+article h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.7rem;
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 5rem 0;
+    text-align: center;
+    background-color: hsl(294, 82%, 18%);
+    padding: 1rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+article h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hsl(294, 82%, 25%);
+    text-shadow: 0 4px 8px rgba(0,0,0,0.35);
+}
+
+article p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* ===========================
+   LINKS GLOBAL
+   =========================== */
+a {
+    color: #5a1b7a;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #8c4bb8;
+}
+
+/* ===========================
+   BILDER
+   =========================== */
+.resizable-image {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 1px;
+    border: 2px solid #e4dcdc;
+}
+
+.resizable-image1 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 1px;
+    border: 2px solid #e4dcdc;
+}
+
+/* ===========================
+   COLLAGE
+   (Grid für Bildübersicht)
+   =========================== */
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    gap: 10px;
+}
+
+.collage img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collage img:hover {
+    transform: scale(1.35);
+    box-shadow: 0 5px 15px rgba(43, 41, 41, 0.9);
+}
+
+/* ===========================
+   KONTAKT
+   =========================== */
+.kontakt-wrapper {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 5rem;
+    margin: 5rem 0;
+}
+
+.kontakt-form button {
+    background-color: hsl(294, 82%, 18%);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.kontakt-form button:hover {
+    background-color: hsl(294, 82%, 25%);
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.footer-nav {
+    display: flex;
+    padding-bottom: 3rem;
+    margin-top: 7rem;
+    justify-content: space-around;
+}
+
+.footer-nav a {
+    text-decoration: overline;
+    color: #2a2a2a;
+}
+
+.footer-nav a:hover {
+    color: #8c4bb8;
+}
+
+/* ===========================
+   WRAPPER
+   (Seitenbreite + zentrierter Inhalt)
+   =========================== */
+.wrapper {
+    max-width: 70rem;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   MOBILE OPTIMIERUNG
+   =========================== */
+@media screen and (max-width: 60rem) {
+    .kontakt-wrapper {
+        padding: 2rem;
     }
 
     .resizable-image {
-        width: 75%;
-        height: auto;
-        display: flow-root;
-        margin: 0 auto;
-        border-radius: 1px;
-        border: 2px solid #e4dcdc;
+        width: 100%;
     }
 
     .resizable-image1 {
-        width: 50%;
-        height: auto;
-        display: flow-root;
-        margin: 0 auto;
-        border-radius: 1px;
-        border: 2px solid #e4dcdc;
+        width: 80%;
     }
+}
 
-    .collage {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 30px;
-    }
-
+/* Mobile Hover-Optimierung */
+@media (max-width: 600px) {
     .collage img:hover {
-        transform: scale(1.7);
-        box-shadow: 0 5px 15px #2b2929ee;
+        transform: scale(1.15);
     }
+}
 
-    .kontakt-wrapper {
-        font-size: 1.5rem;
-        display: flex;
-        text-align: center;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        padding: 5rem;
-        margin-bottom: 5rem;
-        margin-top: 5rem;
+@media screen and (max-width: 60rem) {
+    .footer-nav {
+        margin-top: 3rem;      /* vorher 7rem */
+        padding-bottom: 1.5rem; /* vorher 3rem */
     }
+}

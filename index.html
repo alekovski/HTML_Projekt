@@ -2,40 +2,55 @@
 <html lang="de">
 
 <head>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  rel="stylesheet"
-/>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projekt</title>
-  <link rel="stylesheet" href="/js/Projekt/style_index.css" />
-  <link rel="stylesheet" href="/js/Projekt/query_index.css" />
+
+  <!-- Projekt: Startseite (führt zur Galerie-Seite index2.html) -->
+  <title>Kunstprojekt Düsseldorf – Startseite</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Icon-Bibliothek -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Styles für Startseite -->
+  <link rel="stylesheet" href="style_index.css" />
+  <link rel="stylesheet" href="query_index.css" />
 </head>
 
 <body>
+  <!-- Layout-Wrapper -->
   <div class="wrapper">
+
+        <!-- Hauptnavigation (führt komplett zu index2.html) -->
     <nav class="top-nav">
+      
       <label for="check" class="switch-label"></label>
+      
       <input type="checkbox" id="check" />
 
       <div class="nav-wrapper">
         <div>
-          <a href="http://127.0.0.1:5500/js/Projekt/index2.html"><i class="fas fa-home"></i> HOME</a>
+          <a href="index2.html"><i class="fas fa-home"></i> HOME</a>
         </div>
         <div>
-          <a href="http://127.0.0.1:5500/js/Projekt/index2.html#inhalt"><i class="fas fa-calendar-alt"></i> Veranstaltungen</a>
+          <a href="index2.html#inhalt"><i class="fas fa-calendar-alt"></i> Veranstaltungen</a>
         </div>
         <div>
-          <a href="http://127.0.0.1:5500/js/Projekt/index2.html#1"><i class="fas fa-envelope"></i> Kontakt</a>
+          <a href="index2.html#kontakt"><i class="fas fa-envelope"></i> Kontakt</a>
         </div>
         <div>
-          <a href="http://127.0.0.1:5500/js/Projekt/index2.html#1"><i class="fas fa-info-circle"></i> About</a>
+          <a href="index2.html#kontakt"><i class="fas fa-info-circle"></i> About</a>
         </div>
       </div>
+      
     </nav>
+
   </div>
+
 </body>
 
 </html>
