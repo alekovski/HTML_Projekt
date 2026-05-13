@@ -3,21 +3,21 @@ This project is a responsive multi‑page website built with HTML and CSS.
 It presents selected art galleries in Düsseldorf and demonstrates clean front‑end structure, organized file layout, and practical web design techniques.
 
 ## Features
- - Start Page Navigation
+ - Start Page Navigation.
     Entry page with links to the main gallery page and internal sections.
- - Gallery Overview Page
+ - Gallery Overview Page.
     Detailed presentation of five Düsseldorf art galleries including images, descriptions, and additional information.
- - Image Collages & Animations
+ - Image Collages & Animations.
     Multiple responsive image sections, including GIF animations and styled gallery layouts.
- - Internal Navigation
+ - Internal Navigation.
     Table of contents with anchor links to each gallery section.
- - Contact Section
+ - Contact Section.
     Address information and a mailto‑based contact form.
- - Legal Subpages
+ - Legal Subpages.
     Separate pages for Impressum, Datenschutz, and Stiftung, each with clean structure and consistent styling.
- - Responsive Design
+ - Responsive Design.
     Layout adapts to different screen sizes using CSS media queries.
- - Clean File Structure
+ - Clean File Structure.
     Clear separation of HTML pages, CSS files, and image assets.
 
 ## Technologies Used
